@@ -1,0 +1,108 @@
+<!-- Build a Survey Form- Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks -->  
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta author="IsabelUX" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey-form</title>
+        <link rel="stylesheet" href="form.css">
+
+    </head>
+
+    <body class="overlay">
+
+        <header>
+            <h1 id="title">Job Search Survey Form</h1>
+            <p id="description" class="description">Thank you for taking the time to help us improve our Job Search Strategies </p>
+        </header>
+
+            <form id="survey-form" method="post" >
+            
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name-label" id="name" placeholder="Enter your name" required>
+            
+                <label for="Email" id="email-label">Email</label>
+                <input type="email" name="email-label" id="email" placeholder="Enter your Email" required>
+                </label>
+
+                <label for="age" id="number-label">Age (optional):</label>
+                <input id="number" type="number" name="age" min="16" max="65" placeholder="Age"/>     
+        
+                <label for="role">Which option describes best your role?</label>
+                <select name="role" id="dropdown" required>
+                    <option value=""disabled selected>-- Select role / market segment-- </option>
+                    <option value="services">I work with people (Ex: customer service, sales, teaching, event coordinator, healthcare, etc)</option>
+                    <option value="machines">I work with machines (Ex: developer, engineer, mechanic, etc) </option>
+                    <option value="numbers">I work with figures (Ex: statician, finances, etc.)</option>
+                    <option value="supply">I work within the supply chain (Ex: farmer,chemical industries, mining, etc)</option>
+                    <option value="media">I work in media (Ex: journalist, editor, actor, etc)</option>
+                    <option value="public">I am a public servant (Ex: police, military, justice, etc)</option>
+                    <option value="not">I prefer not to say</option>
+                </select>
+                
+                <p class="legend">Which Channels do you use? (Check all that apply)</p>
+                                      
+                    <div>                          
+                        <input type="checkbox" class="checkbox" id="board" name="board" value="board">
+                        <label class="example" for="board"> State Job Board </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="checkbox" name="agencies" value="agencies">
+                        <label for="agencies"> Temporary Employment Agencies</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" class="checkbox" id="agencies"name="agencies" value="agencies">
+                        <label for="agencies"> LinkedIn</label>
+                    </div>
+                   
+                    <div>
+                        <input type="checkbox" class="checkbox" id="google" name="google" value="google">
+                        <label for="google"> Google Jobs</label>
+                    </div>
+                
+                    <div>
+                        <input type="checkbox" class="checkbox" id="infojobs" name="infojobs" value="infojobs">
+                        <label for="infojobs"> Infojobs</label>
+                    </div>
+
+                    <div>                
+                        <input type="checkbox" class="checkbox" id="spontaneous" name="spontaneous" value="spontaneous">
+                        <label for="spontaneous"> Spontaneous Application</label>
+                    </div>
+
+                    <p class="legend">Are you actively applying to job offers?</p>
+                       
+                        <div>
+                            <input type="radio" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" value="no">
+                            <label for="no">Not at the moment</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" value="maybe">
+                            <label for="maybe">I am casually brownsing</label>
+                        </div>
+
+
+                    <p class="legend">Do you want to share something with us?</p>
+                    <textarea  id="bio" name="bio" class="mytextarea" placeholder="The best way I have found to send my CV is..."></textarea>
+                     
+
+                <button id="submit"type="submit" value="submit"> Send </button>
+
+
+        </form>
+
+
+    </body>
+
+</html>
